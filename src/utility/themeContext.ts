@@ -9,7 +9,9 @@ export const themes = {
   dark: 1,
 };
 
-export default createContext<ThemeContextType>({
+const ThemeContext = createContext<ThemeContextType>({
   mode: themes.light,
   switchTheme: () => {},
 });
+
+export default ThemeContext

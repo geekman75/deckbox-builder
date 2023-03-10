@@ -15,3 +15,29 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+button.btn {
+    color: white;
+    background: #cc0000;
+    padding: 10px 30px;
+    font-family: cursive;
+    cursor: pointer;
+    transition: all .2s;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.theme-dark button.btn {
+    color: #800080;
+    background-color: #f0f8ff;
+}
+
+button.btn:disabled {
+    cursor: not-allowed;
+    background-color: gray;
+}
+
+.w-300 {
+    width: 300px;
+}
