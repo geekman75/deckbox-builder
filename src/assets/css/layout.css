@@ -10,11 +10,11 @@
 }
 
 .topbar {
-    padding: 20px 30px;
+    padding: 20px;
 }
 
 .topbar .topbar-brand span {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 /* -- END TOPBAR STYLE -- */
@@ -39,7 +39,7 @@
 
 .main-container .sidebar .sidebar-item a {
     display: block;
-    padding: 10px 17px;
+    padding: 10px 20px;
 }
 
 .main-container .sidebar .sidebar-item span {
