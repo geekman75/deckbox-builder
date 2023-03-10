@@ -1,0 +1,24 @@
+.section-page2 .button1-ok {
+    background-color: #03F;
+    color: white;
+}
+
+.section-page2 .button2-remove {
+    background-color: #ffa500;
+    color: black;
+}
+
+.section-page2 .button2-cancel {
+    background-color: transparent;
+    color: black;
+}
+
+.section-page2 .button3-delete {
+    background-color: #cc0000;
+    color: white;
+}
+
+.section-page2 .button3-cancel {
+    background-color: #ffa500;
+    color: black;
+}

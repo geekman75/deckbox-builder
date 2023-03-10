@@ -5,7 +5,7 @@ export const eventSlice = createSlice({
   name: "event",
   initialState: {
     eventList: [] as Array<string>,
-    btnCount: 0,
+    btnCount: 0
   },
   reducers: {
     pushEvent: (state, action) => {
