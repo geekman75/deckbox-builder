@@ -54,6 +54,9 @@ const Page1: FC = () => {
           {evenList.map((item: string) => (
             <p>{item}</p>
           ))}
+          {evenList.length === 0 && (
+            <p>No message found</p>
+          )}
         </div>
       </div>
     </div>

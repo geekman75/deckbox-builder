@@ -1,6 +1,6 @@
 // ** React Import
 import { FC, MouseEventHandler } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 // ** FontAwesome Import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,10 +19,10 @@ const Sidebar: FC = () => {
   return (
     <div className={`sidebar ${collapsed && 'collapsed'}`}>
       <div className='sidebar-item'>
-        <Link to="/" title='Page1'><FontAwesomeIcon icon={faBullseye} /><span>Page1</span></Link>
+        <NavLink to="/" title='Page1'><FontAwesomeIcon icon={faBullseye} /><span>Page1</span></NavLink>
       </div>
       <div className='sidebar-item'>
-        <Link to="/page2" title='Page2'><FontAwesomeIcon icon={faCheckCircle} /><span>Page2</span></Link>
+        <NavLink to="/page2" title='Page2'><FontAwesomeIcon icon={faCheckCircle} /><span>Page2</span></NavLink>
       </div>
       <div className='collapse-action' onClick={handleChangeCollapse}>
         <FontAwesomeIcon icon={faChevronLeft} />

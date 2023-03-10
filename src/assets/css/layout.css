@@ -40,6 +40,13 @@
 .main-container .sidebar .sidebar-item a {
     display: block;
     padding: 10px 20px;
+    transition: color .3s;
+    color: initial;
+}
+
+.main-container .sidebar .sidebar-item a.active {
+    background-color: #b7b7b7;
+    color: white;
 }
 
 .main-container .sidebar .sidebar-item span {
@@ -47,13 +54,12 @@
     overflow: hidden;
     width: 120px;
     justify-content: center;
-    transition: all .3s;
-    color: initial;
+    transition: width .3s;
+    color: inherit;
 }
 
 .main-container .sidebar.collapsed .sidebar-item span {
     width: 0px;
-    color: white;
 }
 
 .main-container .sidebar .collapse-action {
