@@ -1,10 +1,18 @@
 // ** React Imports
 import { FC, useState } from "react";
 import { Outlet } from "react-router-dom";
-import { ThemeContextType } from "../../interfaces/theme.interface";
 
 // ** Context Import
-import ThemeContext, {themes} from "../../utility/themeContext";
+import ThemeContext, {themes} from "utility/themeContext";
+
+// ** Custom Component Import
+import Topbar from "./topbar";
+
+// ** Style Import
+import "assets/css/layout.css"
+
+// ** Type Import
+import { ThemeContextType } from "interfaces/theme.interface";
 
 const Layout: FC = () => {
 
@@ -23,7 +31,10 @@ const Layout: FC = () => {
   return (
     <ThemeContext.Provider value={theme}>
       <div className={'theme-' + (theme.mode ? 'dark' : 'light')}>
-        <Outlet />
+        <Topbar />
+        <div className="main-container">
+          <Outlet />
+        </div>
       </div>
     </ThemeContext.Provider>
   );

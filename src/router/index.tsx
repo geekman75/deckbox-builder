@@ -2,10 +2,10 @@
 import { useRoutes } from "react-router-dom";
 
 // ** Custom Component Import
-import Layout from "../components/layout/Layout";
+import Layout from "components/layout/Layout";
 
 // ** Page Imports
-import LandingPage from "../pages/landing";
+import LandingPage from "pages/landing";
 
 const Router = () => {
   const routes = useRoutes([

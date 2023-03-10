@@ -4,6 +4,9 @@ import { FC, Suspense } from "react";
 // ** Router Import
 import Router from "./router";
 
+// ** Style Import
+import "assets/css/common.css"
+
 const App: FC = () => {
 
   return (

@@ -1,0 +1,17 @@
+.theme-light .topbar {
+    background-color: #808080;
+    color: #ff0;
+}
+
+.theme-dark .topbar {
+    background-color: #c0c0c0;
+    color: #2f4f4f;
+}
+
+.topbar {
+    padding: 20px 30px;
+}
+
+.topbar .topbar-brand span {
+    margin-left: 10px;
+}
