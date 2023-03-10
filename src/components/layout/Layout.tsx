@@ -35,7 +35,9 @@ const Layout: FC = () => {
         <Topbar />
         <div className="main-container">
           <Sidebar />
-          <Outlet />
+          <div className="main-content">
+            <Outlet />
+          </div>
         </div>
       </div>
     </ThemeContext.Provider>

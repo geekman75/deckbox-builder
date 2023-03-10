@@ -1,3 +1,4 @@
+/* -- BEGIN TOPBAR STYLE -- */
 .theme-light .topbar {
     background-color: #808080;
     color: #ff0;
@@ -16,11 +17,16 @@
     margin-left: 10px;
 }
 
+/* -- END TOPBAR STYLE -- */
+
+/* -- BEGIN MAIN CONTAINER STYLE -- */
 .main-container {
     display: flex; 
     height: calc(100vh - 73px);
 }
+/* -- END MAIN CONTAINER STYLE -- */
 
+/* -- BEGIN SIDEBAR STYLE -- */
 .main-container .sidebar {
     border-right: 1px solid gray;
     position: relative;
@@ -73,3 +79,11 @@
 .main-container .sidebar.collapsed .collapse-action svg {
     transform: rotate(-180deg);
 }
+/* -- END SIDEBAR STYLE -- */
+
+/* -- BEGIN MAIN CONTENT STYLE -- */
+.main-container .main-content {
+    flex-grow: 1;
+    padding: 20px 30px;
+}
+/* -- END MAIN CONTENT STYLE -- */

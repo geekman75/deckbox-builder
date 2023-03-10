@@ -1,12 +1,12 @@
 // ** React Import
 import { FC } from "react";
 
-const LandingPage: FC = () => {
+const Page2: FC = () => {
   return (
     <div>
-      This is landing page
+      This is page2
     </div>
   );
 };
 
-export default LandingPage;
+export default Page2;
