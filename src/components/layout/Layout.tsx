@@ -7,6 +7,7 @@ import ThemeContext, {themes} from "utility/themeContext";
 
 // ** Custom Component Import
 import Topbar from "./topbar";
+import Sidebar from "./sidebar";
 
 // ** Style Import
 import "assets/css/layout.css"
@@ -33,6 +34,7 @@ const Layout: FC = () => {
       <div className={'theme-' + (theme.mode ? 'dark' : 'light')}>
         <Topbar />
         <div className="main-container">
+          <Sidebar />
           <Outlet />
         </div>
       </div>

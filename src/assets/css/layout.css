@@ -15,3 +15,61 @@
 .topbar .topbar-brand span {
     margin-left: 10px;
 }
+
+.main-container {
+    display: flex; 
+    height: calc(100vh - 73px);
+}
+
+.main-container .sidebar {
+    border-right: 1px solid gray;
+    position: relative;
+}
+
+.main-container .sidebar .sidebar-item {
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+}
+
+.main-container .sidebar .sidebar-item a {
+    display: block;
+    padding: 10px 17px;
+}
+
+.main-container .sidebar .sidebar-item span {
+    display: inline-flex;
+    overflow: hidden;
+    width: 120px;
+    justify-content: center;
+    transition: all .3s;
+    color: initial;
+}
+
+.main-container .sidebar.collapsed .sidebar-item span {
+    width: 0px;
+    color: white;
+}
+
+.main-container .sidebar .collapse-action {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+    width: 29px;
+    height: 29px;
+    background-color: white;
+    border-radius: 50px;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50%, 50%);
+}
+
+.main-container .sidebar .collapse-action svg {
+    transition: all .1s;
+}
+
+.main-container .sidebar.collapsed .collapse-action svg {
+    transform: rotate(-180deg);
+}
