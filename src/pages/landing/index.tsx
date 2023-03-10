@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const LandingPage: FC = () => {
   return (
-    <div className="">
+    <div>
       This is landing page
     </div>
   );

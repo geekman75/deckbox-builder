@@ -5,6 +5,7 @@ import { FC, Suspense } from "react";
 import Router from "./router";
 
 const App: FC = () => {
+
   return (
     <Suspense fallback={null}>
       <Router />
