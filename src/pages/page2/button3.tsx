@@ -10,14 +10,20 @@ import "assets/css/page2.css";
 const Button3: FC = () => {
   // State
   const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [isDelete, setIsDelete] = useState<boolean>(true)
   const [deletedCount, setDeletedCount] = useState<number>(0);
 
   const handleDelete: MouseEventHandler = () => {
-    setDeletedCount(deletedCount + 1);
     setModalOpen(false);
+    setIsDelete(!isDelete);
   };
 
-  const renderFooter = () => {
+  const handleModalOpen: MouseEventHandler = () => {
+    setModalOpen(true);
+    setDeletedCount(deletedCount + 1);
+  }
+
+  const renderFooter = (): React.ReactNode => {
     return (
       <React.Fragment>
         <button className="footer-btn button3-delete" onClick={handleDelete}>
@@ -35,18 +41,18 @@ const Button3: FC = () => {
     );
   };
 
+  const buttonText = (isDelete ? 'Delete ' : 'Disabled ') + deletedCount
+
   return (
     <div>
       <button
         className="btn w-300"
-        onClick={() => {
-          setModalOpen(true);
-        }}
+        onClick={handleModalOpen}
       >
-        Delete {deletedCount}
+        {buttonText}
       </button>
       <Modal title="Delete?" isOpen={modalOpen} footer={renderFooter()}>
-        Are you sure you want to delete the Delete {deletedCount} button? This cannot be undone!
+        Are you sure you want to delete the {buttonText} button? This cannot be undone!
       </Modal>
     </div>
   );

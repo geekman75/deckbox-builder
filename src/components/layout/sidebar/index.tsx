@@ -17,7 +17,7 @@ const Sidebar: FC = () => {
   }
 
   return (
-    <div className={`sidebar ${collapsed && 'collapsed'}`}>
+    <div className={`sidebar ${collapsed ? 'collapsed' : 'expanded'}`}>
       <div className='sidebar-item'>
         <NavLink to="/" title='Page1'><FontAwesomeIcon icon={faBullseye} /><span>Page1</span></NavLink>
       </div>
